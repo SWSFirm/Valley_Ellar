@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Financial Services </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="login.css">  
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+           <a class="homelink" href="index.html">
+
+            <div class="logo-space">
+                <img src="images/logo.png" alt="Valley ellar Financial Services and General Dealers Logo" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <h1 class="bizzname">Valley Elar</h1>
+            </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <!--
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button>Login...</button>
+            
+        </nav>-->
+    </header>
+
+    
+     <div class="heroimageflex">
+        <!-- Hero -->
+    <section class="hero">
+        <h2>Login To Continue Your Experience</h2>
+        <p>
+            Your Account Full of Amasing Financial Services is waiting 
+            
+        </p>
+        <input placeholder="Username">
+        <input placeholder="Password">
+        <a href="CustomerAccountSection.html"><button class="button ">Login</button></a>
+        <p>
+            Dont have an account <a href="signup.html">Sign up Today...</a>
+            
+        </p>
+    </section>
+    <!-- Bizz Logo -->
+    <div>
+       <img class="bizzlogo" src="images/splash.png" >
+    </div>
+     </div> 
+    <!-- Footer -->
+    <footer>
+        © 2026 Valley Ellar Financial Services and General Dealers LTD. Proof Of Concept Website.
+    </footer>
+
+    <script>
+        // Small script to toggle mobile nav
+        (function(){
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('.nav-links');
+            if (!btn || !nav) return;
+            btn.addEventListener('click', function(){
+                const open = nav.classList.toggle('open');
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+        })();
+    </script>
+
+</body>
+</html>
